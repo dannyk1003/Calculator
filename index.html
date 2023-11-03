@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">
+                My Calculator
+            </th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="text"  id="formula" readonly value="請輸入">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="text"  id="result" readonly value="答案">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="clearInput()">C</button>
+            </td>
+            <td>
+                <button onclick="minus()"><-</button>
+            </td>
+            <td>
+                <button onclick="calculate('%')">%</button>
+            </td>
+            <td>
+                <button onclick="calculate('/')">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendNumber(7)">7</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(8)">8</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(9)">9</button>
+            </td>
+            <td>
+                <button onclick="calculate('*')">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendNumber(4)">4</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(5)">5</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(6)">6</button>
+            </td>
+            <td>
+                <button onclick="calculate('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendNumber(1)">1</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(2)">2</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(3)">3</button>
+            </td>
+            <td>
+                <button onclick="calculate('+')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendNumber0(0)">0</button>
+            </td>
+            <td colspan="2" align="center">
+                <button>.</button>
+            </td>
+            <td>
+                <button onclick="equal()">=</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

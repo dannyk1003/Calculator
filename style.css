@@ -1,0 +1,10 @@
+/* 使用 CSS 來控制按鈕的寬度和高度，並將 padding 設為 0 */
+td button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+th {
+    text-align: center;
+}
