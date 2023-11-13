@@ -46,7 +46,7 @@ function calculate(operator){
 
     if (formulaInput.value != '請輸入'){
         // 算式最後一個不是運算子才做計算
-        if (!/[\%\+\-\*\/]/.test(formulaInput.value.charAt(formulaInput.value.length - 1))){
+        if (!/[\!\%\+\-\*\/]/.test(formulaInput.value.charAt(formulaInput.value.length - 1))){
             if (currentOperator == '+'){
                 currentOutput += +currentInput;
             }
@@ -61,6 +61,9 @@ function calculate(operator){
             }
             else if (currentOperator == '%'){
                 currentOutput %= +currentInput;
+            }
+            else if (operator == '!'){
+                currentOutput = factorial(currentInput)
             }
         }
         resultInput.value = currentOutput;
@@ -88,4 +91,18 @@ function minus(){
     }
     
 
+}
+
+function gotoEngineer(){
+    window.location.href = 'engineer.html';
+}
+
+function factorial(X){
+    result = 1;
+    while (X >= 1){
+        result = result * X;
+        X = X - 1;
+    }
+      
+    return result;
 }

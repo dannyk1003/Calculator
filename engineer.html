@@ -10,21 +10,24 @@
 <body>
     <table>
         <tr>
-            <th colspan="4">
+            <th colspan="5">
                 My Calculator
             </th>
         </tr>
         <tr>
-            <td colspan="4">
+            <td colspan="5">
                 <input type="text"  id="formula" readonly value="請輸入">
             </td>
         </tr>
         <tr>
-            <td colspan="4">
+            <td colspan="5">
                 <input type="text"  id="result" readonly value="答案">
             </td>
         </tr>
         <tr>
+            <td>
+                <button onclick="calculate('!')">X!</button>
+            </td>
             <td>
                 <button onclick="clearInput()">C</button>
             </td>
@@ -37,11 +40,11 @@
             <td>
                 <button onclick="calculate('/')">/</button>
             </td>
-            <td>
-                <button onclick="gotoEngineer()">E</button>
-            </td>
         </tr>
         <tr>
+            <td>
+                <button onclick="">ln</button>
+            </td>
             <td>
                 <button onclick="appendNumber(7)">7</button>
             </td>
@@ -57,6 +60,9 @@
         </tr>
         <tr>
             <td>
+                <button onclick="">log</button>
+            </td>
+            <td>
                 <button onclick="appendNumber(4)">4</button>
             </td>
             <td>
@@ -71,6 +77,9 @@
         </tr>
         <tr>
             <td>
+                <button onclick="">√￣</button>
+            </td>
+            <td>
                 <button onclick="appendNumber(1)">1</button>
             </td>
             <td>
@@ -84,6 +93,9 @@
             </td>
         </tr>
         <tr>
+            <td>
+                <button onclick="">x^y</button>
+            </td>
             <td>
                 <button onclick="appendNumber0(0)">0</button>
             </td>
