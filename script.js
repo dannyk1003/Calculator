@@ -33,10 +33,30 @@ function clearInput(){
 
 function appendNumber0(number){
     const formulaInput = document.getElementById("formula");
+    if (formulaInput.value == '計算結果如下'){
+        const resultInput = document.getElementById("result");
+        formulaInput.value = '';
+        resultInput.value = '';
+        init()
+    }
     if (formulaInput.value != '請輸入' & formulaInput.value != ''){
         formulaInput.value += number;
         currentInput += number;
     } 
+}
+
+function appendNumberSpot(){
+    const formulaInput = document.getElementById("formula");
+    if (formulaInput.value == '計算結果如下'){
+        const resultInput = document.getElementById("result");
+        formulaInput.value = '';
+        resultInput.value = '';
+        init()
+    }
+    if (formulaInput.value != '請輸入' & formulaInput.value != '' & !formulaInput.value.includes(".")){
+        formulaInput.value += '.';
+        currentInput += '.';
+    }
 }
 
 
